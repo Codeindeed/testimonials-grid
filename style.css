@@ -59,6 +59,7 @@ body {
 }
 .container > * {
   border-radius: 0.8rem;
+  box-shadow: 0rem 0rem 10px rgba(128, 125, 125, 0.67);
 }
 .card__1 {
   grid-row: 1/2;

@@ -17,7 +17,7 @@ html {
     font-family: "Barlow Semi Condensed", sans-serif;
   }
 }
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 100em) {
   html {
     font-size: 112.5%;
     font-family: "Barlow Semi Condensed", sans-serif;

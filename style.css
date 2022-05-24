@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+}
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 112.5%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+}
+
+:root {
+  /* ### Primary */
+  --color-Moderate-violet: hsl(263, 55%, 52%);
+  --color-Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --color-Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --color-White: hsl(0, 0%, 100%);
+
+  /* ### Neutral */
+
+  --color-Light-gray: hsl(0, 0%, 81%);
+  --color-Light-grayish-blue: hsl(210, 46%, 95%);
+}
+body {
+  background-color: var(--color-Light-grayish-blue);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 120rem;
+  grid-gap: 2rem;
+  margin: 3rem;
+}
+
+@media only screen and (max-width: 47.5em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container > * {
+  border-radius: 0.8rem;
+}
+.card__1 {
+  grid-row: 1/2;
+  grid-column: 1 / span 2;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px top 20px;
+  background-color: var(--color-Moderate-violet);
+  overflow: hidden;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+.card__heading {
+  justify-self: start;
+  align-self: center;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 0.7rem;
+}
+.picture {
+  border-radius: 7rem;
+  border: 3px solid hsla(263, 62%, 63%, 0.819);
+}
+.texts {
+  align-self: center;
+  color: var(--color-Light-gray);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.texts span {
+  color: hsla(263, 62%, 63%, 0.815);
+  font-size: 1rem;
+}
+.card__text {
+  color: var(--color-White);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.card__content {
+  color: hsla(263, 62%, 63%, 0.815);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.card__2 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background-color: var(--color-Very-dark-grayish-blue);
+  padding: 1rem 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+.card__2 .texts {
+  color: var(--color-White);
+}
+.card__2 .texts span {
+  color: var(--color-Light-gray);
+}
+.card__2 .picture {
+  border: none;
+}
+.card__2 .card__content {
+  color: var(--color-Light-gray);
+}
+.card__3 {
+  grid-row: 1 / -1;
+  grid-column: 4/5;
+  background-color: var(--color-White);
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+.card__3 .picture {
+  border: none;
+}
+.card__3 .card__text {
+  color: var(--color-Very-dark-grayish-blue);
+}
+.card__3 .texts {
+  color: var(--color-Very-dark-grayish-blue);
+}
+.card__span {
+  color: var(--color-Light-gray) !important;
+}
+.card__3 .card__content {
+  color: var(--color-Light-gray);
+}
+
+.card__4 {
+  grid-row: 2 / 3;
+  grid-column: 1/2;
+  background-color: var(--color-White);
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+.card__4 .picture {
+  border: none;
+}
+.card__4 .card__text {
+  color: var(--color-Very-dark-grayish-blue);
+}
+.card__4 .texts {
+  color: var(--color-Very-dark-blackish-blue);
+}
+.card__4 .texts span {
+  color: var(--color-Light-gray);
+}
+.card__4 .card__content {
+  color: var(--color-Light-gray);
+}
+.card__5 {
+  grid-row: 2 / 3;
+  grid-column: 2/4;
+  background-color: var(--color-Very-dark-blackish-blue);
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+.card__5 .texts {
+  color: var(--color-White);
+}
+.card__5 .texts span {
+  color: var(--color-Light-gray);
+}
+.card__5 .card__content {
+  color: var(--color-Light-gray);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  align-self: end;
+}
+.attribution a {
+  color: var(--color-Moderate-violet);
+  text-decoration: none;
+}
